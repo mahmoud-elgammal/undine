@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "declaration": true,
+      "outDir": "dist",
+      "strict": true,
+      "jsx": "react-jsx", // Use "react" if not using React 17+ JSX Transform
+      "esModuleInterop": true,
+      "importHelpers": true,
+      "skipLibCheck": true,
+      "declarationDir": "dist/types",
+      "baseUrl": "./lib", // Point to the `lib` folder for source
+      "paths": {
+        "@types/*": ["types/*"],
+        "@types": ["types/index.d.ts"]
+      },
+      "types": ["./lib/types/index.d.ts"],
+    },
+    "include": ["lib/**/*.ts", "__test__", "jest"],
+    "exclude": ["node_modules", "dist"]
+  }

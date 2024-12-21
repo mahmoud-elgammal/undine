@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "declarationDir": "dist/types",
+    "baseUrl": "./lib", // Point to the `lib` folder for source
+  },
+  "include": ["lib/**/*.ts", "__test__", "jest"],
+  "exclude": ["dist"]
+}
